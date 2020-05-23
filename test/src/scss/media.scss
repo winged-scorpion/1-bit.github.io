@@ -1,0 +1,285 @@
+@import "variables";
+@media (max-width: $start) {
+  .top-scroll {
+    right: 0;
+    top: -60px;
+    margin: 0;
+
+    &:before {
+      background-position: 0 -7px;
+    }
+  }
+  .multiple-items{
+    .slick-prev{
+      left: -100px;
+      transform: rotate(-90deg);
+      right: 0;
+    }
+    .slick-arrow{
+      margin: auto;
+      top: 97%;
+    }
+    .slick-next{
+      right: -100px;
+      left: 0;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .nav {
+    padding-left: 0;
+  }
+  .proposal-list {
+    width: 100%;
+  }
+  .nav {
+    li {
+      padding: 0 10px;
+    }
+  }
+  .about-company {
+    &-list {
+
+      &__item {
+        width: 50%;
+        padding: 0 20px 20px 0;
+
+        &:nth-child(even) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .subscribe-form {
+    &__left {
+    }
+
+    &__right {
+      width: 30%;
+    }
+  }
+  .reviews-item {
+    padding: 26px 21px;
+  }
+
+}
+
+@media (max-width: $tabled) {
+  .career {
+    &-list {
+      &__item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 18% 82%;
+      }
+    }
+
+    &-item {
+      padding-top: 0;
+    }
+  }
+  .open-nav {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: solid 2px #000;
+    border-radius: 3px;
+    position: relative;
+
+    &.active {
+      border: solid 2px #cd3893;
+    }
+  }
+  .nav {
+    display: none;
+  }
+  .nav.show {
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 100%;
+    background: #fff;
+    width: 50%;
+
+    li {
+      padding: 5px 0 5px 15px;
+    }
+  }
+  .proposal-list {
+    &__item {
+      width: 33%;
+      padding: 0 38px 20px;
+    }
+  }
+  .new-training {
+    padding: 12px 0 53px 20px;
+
+    &__record {
+      padding-left: 0;
+      display: block;
+
+      &-price {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $big-mobile) {
+  .flex-base {
+
+  }
+  .proposal {
+    &-list {
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+  .training {
+    &-more {
+      padding-bottom: 20px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+  .mobile_hidden {
+    display: none;
+  }
+  .mobile_show {
+    display: block;
+  }
+  .career {
+    &__item {
+      width: 100%;
+    }
+
+    &-list {
+      &__item {
+        grid-template-columns: 25% 75%;
+      }
+    }
+  }
+
+  .subscribe-form {
+    display: block;
+
+    &__left, &__right {
+      width: 100%;
+      padding-bottom: 25px;
+    }
+  }
+
+  .training-bg {
+    &:before {
+      display: none;
+    }
+  }
+
+  .new-training {
+    background: url($url_img + "seminar-bg.jpg") no-repeat;
+    padding: 15px 15px 30px;
+    margin: 0 -15px;
+  }
+
+  .reviews {
+    &__list {
+      padding: 20px 0 0;
+    }
+  }
+
+  .head {
+    font-size: 28px;
+    padding: 30px 0 60px;
+  }
+
+  .sub-head {
+    font-size: 22px;
+  }
+
+  .wrap {
+    font-size: 16px;
+  }
+
+  .section_padding {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .new-training {
+    &__head {
+      padding-bottom: 50px;
+    }
+    &__description{
+      font-size: 28px;
+    }
+    &__record-price{
+      padding-left: 50px;
+      &:before{
+        left: 0;
+      }
+    }
+  }
+  .copyright,.soc-block{
+    padding-bottom: 15px;
+  }
+
+}
+
+@media (max-width: $mobile) {
+  .about-company {
+    display: block;
+
+    &__text {
+      width: 100%;
+      padding-bottom: 15px;
+    }
+  }
+  .about-company {
+    &-list {
+      display: block;
+
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+  .training-list {
+    display: block;
+
+    &__item {
+      width: 100%;
+    }
+  }
+  .subscribe-form {
+    display: block;
+
+    &__left, &__right {
+      display: block;
+
+    }
+    &__left{
+      > div{
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .button {
+    width: 100%;
+    display: block;
+  }
+  .reviews {
+    &__list {
+      display: block;
+    }
+
+    &-item {
+      width: 100%;
+    }
+  }
+}

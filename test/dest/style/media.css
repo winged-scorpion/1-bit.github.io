@@ -1,0 +1,151 @@
+@media (max-width: 1450px) {
+  .top-scroll {
+    right: 0;
+    top: -60px;
+    margin: 0; }
+    .top-scroll:before {
+      background-position: 0 -7px; }
+  .multiple-items .slick-prev {
+    left: -100px;
+    transform: rotate(-90deg);
+    right: 0; }
+  .multiple-items .slick-arrow {
+    margin: auto;
+    top: 97%; }
+  .multiple-items .slick-next {
+    right: -100px;
+    left: 0;
+    transform: rotate(90deg); } }
+
+@media (max-width: 1200px) {
+  .nav {
+    padding-left: 0; }
+  .proposal-list {
+    width: 100%; }
+  .nav li {
+    padding: 0 10px; }
+  .about-company-list__item {
+    width: 50%;
+    padding: 0 20px 20px 0; }
+    .about-company-list__item:nth-child(even) {
+      padding-right: 0; }
+  .subscribe-form__right {
+    width: 30%; }
+  .reviews-item {
+    padding: 26px 21px; } }
+
+@media (max-width: 1024px) {
+  .career-list__item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18% 82%; }
+  .career-item {
+    padding-top: 0; }
+  .open-nav {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: solid 2px #000;
+    border-radius: 3px;
+    position: relative; }
+    .open-nav.active {
+      border: solid 2px #cd3893; }
+  .nav {
+    display: none; }
+  .nav.show {
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 100%;
+    background: #fff;
+    width: 50%; }
+    .nav.show li {
+      padding: 5px 0 5px 15px; }
+  .proposal-list__item {
+    width: 33%;
+    padding: 0 38px 20px; }
+  .new-training {
+    padding: 12px 0 53px 20px; }
+    .new-training__record {
+      padding-left: 0;
+      display: block; }
+      .new-training__record-price {
+        padding-bottom: 20px; } }
+
+@media (max-width: 768px) {
+  .proposal-list__item {
+    width: 100%; }
+  .training-more {
+    padding-bottom: 20px; }
+  .training__item {
+    width: 100%; }
+  .mobile_hidden {
+    display: none; }
+  .mobile_show {
+    display: block; }
+  .career__item {
+    width: 100%; }
+  .career-list__item {
+    grid-template-columns: 25% 75%; }
+  .subscribe-form {
+    display: block; }
+    .subscribe-form__left, .subscribe-form__right {
+      width: 100%;
+      padding-bottom: 25px; }
+  .training-bg:before {
+    display: none; }
+  .new-training {
+    background: url("../../images/seminar-bg.jpg") no-repeat;
+    padding: 15px 15px 30px;
+    margin: 0 -15px; }
+  .reviews__list {
+    padding: 20px 0 0; }
+  .head {
+    font-size: 28px;
+    padding: 30px 0 60px; }
+  .sub-head {
+    font-size: 22px; }
+  .wrap {
+    font-size: 16px; }
+  .section_padding {
+    padding-top: 25px;
+    padding-bottom: 20px; }
+  .new-training__head {
+    padding-bottom: 50px; }
+  .new-training__description {
+    font-size: 28px; }
+  .new-training__record-price {
+    padding-left: 50px; }
+    .new-training__record-price:before {
+      left: 0; }
+  .copyright, .soc-block {
+    padding-bottom: 15px; } }
+
+@media (max-width: 480px) {
+  .about-company {
+    display: block; }
+    .about-company__text {
+      width: 100%;
+      padding-bottom: 15px; }
+  .about-company-list {
+    display: block; }
+    .about-company-list__item {
+      width: 100%; }
+  .training-list {
+    display: block; }
+    .training-list__item {
+      width: 100%; }
+  .subscribe-form {
+    display: block; }
+    .subscribe-form__left, .subscribe-form__right {
+      display: block; }
+    .subscribe-form__left > div {
+      width: 100%;
+      margin-bottom: 25px; }
+  .button {
+    width: 100%;
+    display: block; }
+  .reviews__list {
+    display: block; }
+  .reviews-item {
+    width: 100%; } }
